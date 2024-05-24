@@ -1,2 +1,2 @@
-# Bagaço feito em rEACT
-para acessar [Api de Rick And Morty][(https://rickandmortyapi.com/)
+# Bagaço feito em React
+Para acessar [Api de Rick And Morty](https://rickandmortyapi.com/)
