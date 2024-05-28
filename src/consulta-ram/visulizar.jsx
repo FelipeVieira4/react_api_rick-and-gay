@@ -36,7 +36,21 @@ function Visualizar() {
                             <p>Origem: {personagem.origin.name}</p>
                             <p>Status: {personagem.status}</p>
                         </div>
+                        <div>
+                        {personagem.episode.map((episodio, index) => {
 
+                            const parts = episodio.split('/');
+                            const episode_id = parts[parts.length - 1];
+                            return (
+                                <>
+                                <Link key={index} to={"/episodio/" + episode_id}>
+                                Episódio {episode_id}
+                                </Link>
+                                <br/>
+                                </>
+                            );
+                        })}
+                        </div>
                     </div>
                     <br />
                     <div>

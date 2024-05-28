@@ -9,7 +9,7 @@ import Cache from './Contador/Principal';
 import './index.css'
 import ConsultaRAM from './consulta-ram/consulta-ram';
 import Visualizar from './consulta-ram/visulizar';
-
+import Episodio from './consulta-ram/episodios';
 
 const router=createBrowserRouter([
   {
@@ -31,6 +31,10 @@ const router=createBrowserRouter([
       {
         path:'/visualizar/:id',
         element:<Visualizar/>
+      },
+      {
+        path:'/episodio/:id',
+        element:<Episodio/>
       }
     ]
   }
